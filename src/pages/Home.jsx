@@ -3,7 +3,7 @@ import About from "./About";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-[1375px] flex flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50 text-center p-6">
+    <div className="min-h-screen w-[1520px] flex flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50 text-center p-6">
       <h2 className="text-5xl md:text-6xl font-extrabold text-blue-800 mb-6 drop-shadow">
         Welcome to <span className="text-indigo-600">LibraryMS</span>
       </h2>
@@ -14,7 +14,7 @@ export default function Home() {
       </p>
 
       <div className="flex gap-6 flex-wrap justify-center">
-        <button className="bg-blue-700 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition transform hover:scale-105">
+        <button className="bg-blue-700 text-blue-500 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition transform hover:scale-105">
           🚀 Get Started
         </button>
         <button className="border-2 border-blue-700 text-blue-700 px-8 py-3 rounded-lg hover:bg-blue-700 hover:text-blue-400 transition transform hover:scale-105">

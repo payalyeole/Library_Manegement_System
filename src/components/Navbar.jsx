@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r w-[1375px] from-blue-700  to-blue-700 text-white shadow-md">
+    <nav className="bg-gradient-to-r w-[1520px] from-blue-700  to-blue-700 text-white shadow-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo / Brand */}
         <h1 className="text-2xl font-bold tracking-wide">
@@ -26,6 +26,9 @@ export default function Navbar() {
           </li>
           <li className="hover:text-yellow-300 transition">
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/show">Show Available Books</Link>
           </li>
           <li>
             <Link
@@ -53,6 +56,7 @@ export default function Navbar() {
           <Link to="/about" className="block hover:text-yellow-300">About</Link>
           <Link to="/services" className="block hover:text-yellow-300">Services</Link>
           <Link to="/contact" className="block hover:text-yellow-300">Contact</Link>
+          <Link to="/show" className="block hover:text-yellow-300">Show Available Books</Link>
           <Link
             to="/login"
             className="block bg-yellow-400  px-4 py-2 rounded-lg hover:bg-yellow-300"

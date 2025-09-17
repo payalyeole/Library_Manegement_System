@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-indigo-700 text-white shadow-lg">
-      <div className="container w-full  px-6 py-4 flex justify-between items-center">
+    <nav className="bg-gradient-to-r w-[1375px] from-blue-700  to-blue-700 text-white shadow-md">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo / Brand */}
         <h1 className="text-2xl font-bold tracking-wide">
           📚 Library<span className="text-yellow-300">MS</span>
@@ -48,14 +48,14 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-indigo-700 px-6 py-4 space-y-4">
+        <div className="md:hidden  px-6 py-4 space-y-4">
           <Link to="/" className="block hover:text-yellow-300">Home</Link>
           <Link to="/about" className="block hover:text-yellow-300">About</Link>
           <Link to="/services" className="block hover:text-yellow-300">Services</Link>
           <Link to="/contact" className="block hover:text-yellow-300">Contact</Link>
           <Link
             to="/login"
-            className="block bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg hover:bg-yellow-300"
+            className="block bg-yellow-400  px-4 py-2 rounded-lg hover:bg-yellow-300"
           >
             Login
           </Link>

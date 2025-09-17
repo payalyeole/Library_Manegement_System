@@ -1,3 +1,6 @@
+import Services from "./Services";
+import About from "./About";
+
 export default function Home() {
   return (
     <div className="min-h-screen w-[1375px] flex flex-col items-center justify-center bg-gradient-to-b from-white to-blue-50 text-center p-6">
@@ -11,10 +14,10 @@ export default function Home() {
       </p>
 
       <div className="flex gap-6 flex-wrap justify-center">
-        <button className="bg-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition transform hover:scale-105">
+        <button className="bg-blue-700 text-black px-8 py-3 rounded-lg shadow-lg hover:bg-blue-800 transition transform hover:scale-105">
           🚀 Get Started
         </button>
-        <button className="border-2 border-blue-700 text-blue-700 px-8 py-3 rounded-lg hover:bg-blue-700 hover:text-white transition transform hover:scale-105">
+        <button className="border-2 border-blue-700 text-blue-700 px-8 py-3 rounded-lg hover:bg-blue-700 hover:text-blue-400 transition transform hover:scale-105">
           📖 Learn More
         </button>
       </div>
@@ -32,6 +35,14 @@ export default function Home() {
           <h3 className="text-xl font-bold text-blue-700 mb-2">📊 Reports & Analytics</h3>
           <p className="text-gray-600">Generate insights and keep track of library activities.</p>
         </div>
+      </div>
+
+      <div className="w-full mt-20">
+        <About />
+      </div>
+
+      <div className="w-full mt-20">
+        <Services />
       </div>
     </div>
   );
